@@ -54,6 +54,8 @@
 					<section id="wrapper">
 
 						<!-- One -->
+						<div id="demo">
+
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
 									<a href="" class="image"><img src="images/web.jpg" alt="" /></a>
@@ -64,13 +66,13 @@
 											de considerar adquirir una. Un diseño aburrido, barato o muy sobrecargado afecta
 											de gran manera la psicología del cliente y del consumidor
 										</p>
-										<a href="{{route('diseño')}}" class="special">Proceso de diseño</a>
+										<a href="{{'servicio#/'}}" class="special">Proceso de diseño</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
+							<section id="two" class="wrapper alt spotlight style2" data-aos="fade-right">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/dev.jpg" alt="" /></a>
 									<div class="content">
@@ -80,13 +82,13 @@
 											resolviendo problemas o simplificando tareas repetiticas que restan tiempo util a él
 											y a sus empleados.
 										</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="{{'servicio#/Desarrollo' }}" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
+							<section id="three" class="wrapper spotlight style3" data-aos="fade-left">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/mob.jpg" alt="" /></a>
 									<div class="content">
@@ -96,13 +98,12 @@
 											funcionan de manera excelente para promocionar tu compañia y tu marca
 											pero las paginas web siguen siendo el medio para agilizar las ventas de una compañía
 										</p>
-										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
+							<section id="four" class="wrapper alt style1" data-aos="fade-up">
 								<div class="inner">
 									<h2 class="major">¿Por qué una página web?</h2>
 									<p>
@@ -112,7 +113,7 @@
 
 									</p>
 									<section class="features">
-										<article>
+										<article data-aos="fade-right">
 											<a href="#" class="image"><img src="images/acc.png" alt="" /></a>
 											<h3 class="major">Facilidad de acceso</h3>
 											<p>
@@ -120,7 +121,7 @@
 												 dispositivo sin importar marca, dimensiones o capacidad de almacenamiento.
 											</p>
 										</article>
-										<article>
+										<article data-aos="fade-left">
 											<a href="#" class="image"><img src="images/int.jpg"  alt="" /></a>
 											<h3 class="major">Uso intuitivo</h3>
 											<p>
@@ -128,7 +129,7 @@
 												, así que mantener interfaces sencillas e intuitivas es nuestro objectivo al momento del diseño y desarrollo.
 											</p>
 										</article>
-										<article>
+										<article data-aos="fade-right">
 											<a href="#" class="image"><img src="images/inv.jpg" alt="" /></a>
 											<h3 class="major">Fácil manejo de inventario</h3>
 											<p>
@@ -136,7 +137,7 @@
 												no importa si estas de vacaciones, o ocupado en otro emprendimiento, manejar tu inventario esta a pocos click de ti.
 											</p>
 										</article>
-										<article>
+										<article data-aos="fade-left">
 											<a href="#" class="image"><img src="images/inf.jpg" alt="" /></a>
 											<h3 class="major">Infinidad de posiilidades</h3>
 											<p>
@@ -146,11 +147,13 @@
 											</p>
 										</article>
 									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Portafolio</a></li>
-									</ul>
+									<div align="center" data-aos="fade-up">
+											<a href="#" class="button">Portafolio</a>
+									</div>
 								</div>
 							</section>
+						</div>
+
 
 					</section>
 
@@ -205,6 +208,7 @@
 			<script src="{{'js/breakpoints.min.js'}}"></script>
 			<script src="{{'js/util.js'}}"></script>
 			<script src="{{'js/main.js'}}"></script>
+			<script src="{{'js/app.js'}}"></script>
 
 	</body>
 </html>

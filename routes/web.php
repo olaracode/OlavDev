@@ -20,7 +20,19 @@ Route::get('/', function () {
 Route::get('/diseño', function () {
     return view('diseño');
 })->name('diseño');
-
+// Desarrollo Web
+Route::get('/desarrollo', function () {
+    return view('desarrollo');
+})->name('dev');
+Route::get('/servicio', function () {
+    return view('servicio');
+});
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
+Route::get('/univ', function () {
+    return view('univ');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
