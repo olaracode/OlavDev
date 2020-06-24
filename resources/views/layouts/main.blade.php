@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
     <link rel="shortcut icon" href="{{'images/untitled.ico'}}">
@@ -34,10 +29,8 @@
             <h2>Menu</h2>
             <ul class="links">
                 <li><a href="{{route('inicio')}}">Inicio</a></li>
-                <li><a href="#">Portafolio</a></li>
+                <li><a href="{{('portfolio')}}">Portafolio</a></li>
                 <li><a href="#">Preguntas Frequentes</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Sign Up</a></li>
             </ul>
             <a href="#" class="close">Close</a>
         </div>

@@ -26,6 +26,9 @@
     },
     "dependencies": {
         "aos": "^3.0.0-beta.6",
+        "boostrap": "^2.0.0",
+        "bootstrap-vue": "^2.15.0",
+        "vue-flip": "^1.0.1",
         "vue-router": "^3.3.3"
     }
 }

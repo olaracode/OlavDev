@@ -12,27 +12,39 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('index');
-})->name('inicio');
-//diseño web
-Route::get('/diseño', function () {
-    return view('diseño');
-})->name('diseño');
-// Desarrollo Web
-Route::get('/desarrollo', function () {
-    return view('desarrollo');
-})->name('dev');
-Route::get('/servicio', function () {
-    return view('servicio');
-});
+//
+//Route::get('/', function () {
+//    return view('index');
+//})->name('inicio');
 Route::get('/portfolio', function () {
     return view('portfolio');
 });
-Route::get('/univ', function () {
+Route::get('/portfolio/univ', function () {
     return view('univ');
 });
+Route::get('/portfolio/estudio', function () {
+    return view('jc');
+});
+Route::get('/portfolio/visual', function () {
+    return view('visual');
+});
+Route::get('/portfolio/rs', function () {
+    return view('real');
+});
+Route::get('/diseno', function () {
+    return view('components');
+});
+
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Consulta
+Route::get('/', 'ConsultaController@create')->name('inicio');
+Route::post('/consultas', 'ConsultaController@store');
+
+
+Route::get('/admin', 'HomeController@index')->name('admin');
+Route::get('/admin/all', function () {
+    return view('todas');
+})->middleware('auth');
