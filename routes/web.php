@@ -16,9 +16,6 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', function () {
 //    return view('index');
 //})->name('inicio');
-Route::get('/portfolio', function () {
-    return view('portfolio');
-});
 Route::get('/portfolio/univ', function () {
     return view('univ');
 });
@@ -42,9 +39,13 @@ Auth::routes();
 //Consulta
 Route::get('/', 'ConsultaController@create')->name('inicio');
 Route::post('/consultas', 'ConsultaController@store');
+Route::get('consultas/{consulta}/edit', 'ConsultaController@edit');
+Route::patch('consultas/{consulta}', 'ConsultaController@update');
+Route::patch('consultas/{consulta}/delete', 'ConsultaController@delete');
 
 
 Route::get('/admin', 'HomeController@index')->name('admin');
+Route::get('logout', 'AuthenticatesUsers@logout');
 Route::get('/admin/all', function () {
     return view('todas');
 })->middleware('auth');

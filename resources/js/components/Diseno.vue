@@ -21,6 +21,7 @@
                     En esta etapa el emprendedor deberá comunicar su idea, que paleta de colores le gustaría tener y preferiblemente proveer imagenes de calidad.
                     <br><br>En base a esa primera comunicación se realizán varios diseños de los cuales el cliente puede decidir
                     que secciones le gustan, cuales no y mediante ese proceso concretar la parte visual de la página
+                    <br><br><a href="diseno#/Portfolio" class="button style3">Portafolios</a>
                 </p>
             </section>
         </article>

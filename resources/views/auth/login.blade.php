@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <section id="wrapper">
+    <section class="container box style1">
         <div class="wrapper">
             <div class="inner">
                 <h2 align="center">Login</h2>
@@ -36,13 +36,13 @@
                             </div>
                         </div>
                         <div class="col-md-8 offset-md-4">
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="button style3">
                                 {{ __('Login') }}
                             </button>
                             @if (Route::has('password.request'))
-                                <a class="button" href="{{ route('password.request') }}">
+                                <button class="button style3" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
-                                </a>
+                                </button>
                             @endif
                         </div>
                     </div>

@@ -36,13 +36,13 @@
                     decidir si seguir con el servicio o cambiarlo.
                 </p>
                 <h2 align="center">
-                    Mantenimiento/Modificaciones
+                    Mantenimiento
                 </h2>
                 <p align="justify">
                     El mantenimiento de una página puede incluir modificaciones de la interfaz visual, agregar funcionalidades, actualizar información, resolver problemas en el codigo.
                     <br><br>Al crear una página se ofrece un servicio de mantenimiento basico que significa resolver errores en el codigo o servidor grátis por un año, de ahí en adelante se debe acordar
                     con el cliente
-
+                    <br><br><a href="diseno#/Portfolio" class="button style3">Portafolios</a>
                 </p>
             </section>
         </article>

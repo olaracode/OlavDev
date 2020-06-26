@@ -28,58 +28,64 @@
                 - Bill Gates -
             </p>
             <footer>
-                <a href="#first" class="button style2 scrolly">Portafolios</a>
+                <a href="{{('diseno/#Portfolio')}}" class="button style2 scrolly">Portafolios</a>
             </footer>
         </section>
 
         <!-- Feature 1 -->
-        <article id="first" class="container box style1 right" data-aos="fade-down" data-aos-duration="1000">
-            <a href="#" class="image fit"><img src="{{asset('images/web.jpg')}}" alt="" /></a>
-            <div class="inner">
-                <header>
-                    <h2>
-                        <a href="{{('diseno')}}">Diseño Adaptativo</a>
-                    </h2>
-                </header>
-                <p align="justify">
-                    El diseño adaptativo de una página web permite la fácil adaptación de la misma a distintos formatos de pantalla bien sea
-                     una computadora, una tableta o un telefono el resultado debería ser esteticamente agradable
-                </p>
-            </div>
-        </article>
+        <a href="{{('diseno')}}">
+            <article id="first" class="container box style1 right" data-aos="fade-down" data-aos-duration="1000">
+                <a href="{{('diseno')}}" class="image fit"><img src="{{asset('images/web.jpg')}}" alt="" /></a>
+                <div class="inner">
+                    <header>
+                        <h2>
+                            <a href="{{('diseno')}}">Diseño Adaptativo</a>
+                        </h2>
+                    </header>
+                    <p align="justify">
+                        El diseño adaptativo de una página web permite la fácil adaptación de la misma a distintos formatos de pantalla bien sea
+                        una computadora, una tableta o un telefono el resultado debería ser esteticamente agradable
+                    </p>
+                </div>
+            </article>
+        </a>
+
 
         <!-- Feature 2 -->
-        <article class="container box style1 left" data-aos="fade-down" data-aos-duration="1000">
-            <a href="#" class="image fit"><img src="{{asset('images/coding.jpg')}}" alt="" /></a>
-            <div class="inner">
-                <header>
-                    <h2>
-                        <a href="{{('diseno#/Desarrollo')}}">Desarrollo intuitivo</a>
-                    </h2>
-                </header>
-                <p align="justify">
-                    La parte programatica de la página va a dictaminar las funciones que esta sea capaz de desempeñar.
-                </p>
-            </div>
-        </article>
-
+        <a href="{{('diseno#/Desarrollo')}}">
+            <article class="container box style1 left" data-aos="fade-down" data-aos-duration="1000">
+                <a href="{{('diseno#/Desarrollo')}}" class="image fit"><img src="{{asset('images/coding.jpg')}}" alt="" /></a>
+                <div class="inner">
+                    <header>
+                        <h2>
+                            <a href="{{('diseno#/Desarrollo')}}">Desarrollo intuitivo</a>
+                        </h2>
+                    </header>
+                    <p align="justify">
+                        La parte programatica de la página va a dictaminar las funciones que esta sea capaz de desempeñar.
+                    </p>
+                </div>
+            </article>
+        </a>
         <!-- Portfolio -->
 
-        <article class="container box" data-aos="fade-down" data-aos-duration="1000">
-            <section id="banner1">
-                <header>
-                    <h2>Hosting y mantenimiento</h2>
-                </header>
-                <p>
-                    Despues de concretar tu diseño, solo relajate y maneja los aspectos cruciales de tu página, como
-                    cotizaciones, compras y actualizaciones que desees hacer.<br>
-                    Nos encargamos de conseguir el mejor servicio de hosting y dominio para tu emprendimiento.
-                </p>
-                <footer>
-                    <a href="{{('diseno#/Despliegue')}}" class="button style2">¿Que es hosting?</a>
-                </footer>
-            </section>
-        </article>
+        <a href="{{('diseno#/Despliegue')}}">
+            <article class="container box" data-aos="fade-down" data-aos-duration="1000">
+                <section id="banner1">
+                    <header>
+                        <h2>Hosting y mantenimiento</h2>
+                    </header>
+                    <p>
+                        Despues de concretar tu diseño, solo relajate y maneja los aspectos cruciales de tu página, como
+                        cotizaciones, compras y actualizaciones que desees hacer.<br>
+                        Nos encargamos de conseguir el mejor servicio de hosting y dominio para tu emprendimiento.
+                    </p>
+                    <footer>
+                        <a href="{{('diseno#/Despliegue')}}" class="button style2">¿Que es hosting?</a>
+                    </footer>
+                </section>
+            </article>
+        </a>
 
         <!-- Contact -->
         <article id="cotiza" class="container box style3" data-aos="fade-down" data-aos-duration="1000">
@@ -89,12 +95,13 @@
                     Impulsa tu emprendimiento cotizando hoy.
                 </p>
             </header>
-            <form action="#first">
+            <form method="post" action="/consultas">
+                @csrf
                 <div class="row gtr-50">
-                    <div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Nombre" /></div>
+                    <div class="col-6 col-12-mobile"><input type="text" class="text" name="nombre" placeholder="Nombre" /></div>
                     <div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Correo" /></div>
                     <div class="col-12">
-                        <textarea name="message" placeholder="Explica tu proyecto"></textarea>
+                        <textarea name="consulta" placeholder="Explica tu proyecto"></textarea>
                     </div>
                     <div class="col-12">
                         <ul class="actions">

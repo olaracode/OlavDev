@@ -1,35 +1,46 @@
 <template>
     <div id="#demo">
         <!-- Header -->
-        <section id="header" class="cabecera">
-            <header>
-                <a href="/"><h1>Olara</h1></a>
-                <p>Etapas</p>
-            </header>
-            <footer>
-                <a href="#first" class="button style2 scrolly">Portafolios</a>
+            <section id="banner1">
+                <header>
+                    <h2><a href="/">Olarav</a></h2>
+                    <p>Etapas del desarrollo</p>
+                </header>
 
-            </footer>
-        </section>
+                <div class="row">
+                    <div class="col-3" data-aos="slide-left" data-aos-duration="1000">
+                        <router-link to="/">
+                            Diseño
+                        </router-link>
+                    </div>
+                    <div class="col-3">
+                        <router-link to="/Desarrollo">
+                            Desarrollo
+                        </router-link>
+                    </div>
+                    <div class="col-3" data-aos="slide-right" data-aos-duration="1000">
+                        <router-link to="/Despliegue">
+                            Despliegue
+                        </router-link>
+                    </div>
+                    <div class="col-3">
+                        <router-link to="/Portfolio">Portafolios</router-link>
+                    </div>
+                </div>
+            </section>
 
         <!-- Banner -->
-        <section id="banner">
-            <div class="row">
-                <div class="col-4" data-aos="slide-left" data-aos-duration="1000"><router-link to="/" class="button style2">Diseño</router-link></div>
-                <div class="col-4"><router-link to="/Desarrollo" class="button style2">Desarrollo</router-link></div>
-                <div class="col-4" data-aos="slide-right" data-aos-duration="1000"><router-link to="/Despliegue" class="button style2">Despliegue</router-link></div>
-            </div>
-        </section>
-
         <router-view></router-view>
-        <section id="banner5">
-            <header>
-                <h2>Impulsa tu negocio</h2>
-            </header>
-            <div align="center">
-                <a href="/" class="button style1">Cotiza ahora</a>
-            </div>
-        </section>
+        <article class="container box" data-aos="fade-down" data-aos-duration="1000">
+            <section id="banner">
+                <header>
+                    <h2>Impulsa tu negocio</h2>
+                </header>
+                <div align="center">
+                    <a href="/" class="button style2">Cotiza ahora</a>
+                </div>
+            </section>
+        </article>
         <section id="footer">
             <ul class="icons">
                 <li><a href="#footer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>

@@ -1,62 +1,43 @@
-<!DOCTYPE HTML>
-<html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="shortcut icon" href="{{'images/untitled.ico'}}">
-    <title>OlavDev</title>
+    <title>Visual</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="{{asset('css/main.css')}}" />
-    <noscript><link rel="stylesheet" href="{{asset('css/noscript.css')}}" /></noscript>
+    <link rel="stylesheet" href="{{asset('/css/visual/main.css')}}" />
+    <noscript><link rel="stylesheet" href="{{asset('/css/visual/noscript.css')}}" /></noscript>
 </head>
 <body class="is-preload">
-
-<!-- Page Wrapper -->
-
-<!-- Header -->
-<div id="page-wrapper">
-
-    <!-- Header -->
-    <header id="header">
-        <h1><a href="{{route('inicio')}}">OlavDev</a></h1>
-        <nav>
-            <a href="#menu">Menu</a>
-        </nav>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-        <div class="inner">
-            <h2>Menu</h2>
-            <ul class="links">
-                <li><a href="{{route('inicio')}}">Inicio</a></li>
-                <li><a href="{{('portfolio')}}">Portafolio</a></li>
-                <li><a href="#">Preguntas Frequentes</a></li>
-            </ul>
-            <a href="#" class="close">Close</a>
-        </div>
-    </nav>
+<div id="demo">
     @yield('content')
-
-    <section id="footer">
-        <div class="inner">
-            <ul class="copyright">
-                <a href="#"><li class="icon solid fa-envelope"></li></a>
-                <a href="#" ><li class="icon brands fa-instagram"></li></a>
-                <li>Diseño y desarrollo: Octavio Lara</li>
-            </ul>
-        </div>
-    </section>
 </div>
-
-<!-- Scripts -->
-<script src="{{'/js/jquery.min.js'}}"></script>
-<script src="{{'/js/jquery.scrollex.min.js'}}"></script>
-<script src="{{'js/browser.min.js'}}"></script>
-<script src="{{'js/breakpoints.min.js'}}"></script>
-<script src="{{'js/util.js'}}"></script>
-<script src="{{'js/main.js'}}"></script>
-<script src="{{('/js/app.js')}}"></script>
+<section id="footer">
+    <ul class="icons">
+        <li><a href="#footer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#footer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#footer" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+        <li><a href="#footer" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+        <li><a href="https://www.instagram.com/olvdev/?hl=es" class="icon brands fa-instagram"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+    </ul>
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy;Visual.</li>
+            <li>Diseño: Octavio Lara</li>
+        </ul>
+    </div>
+</section>
 
 </body>
 
+
+
+<script src="{{asset('js/visual/jquery.min.js')}}"></script>
+<script src="{{asset('js/visual/jquery.scrolly.min.js')}}"></script>
+<script src="{{asset('js/visual/jquery.poptrox.min.js')}}"></script>
+<script src="{{asset('js/visual/browser.min.js')}}"></script>
+<script src="{{asset('js/visual/breakpoints.min.js')}}"></script>
+<script src="{{asset('js/visual/util.js')}}"></script>
+<script src="{{asset('js/visual/main.js')}}"></script>
+<script src="{{('/js/app.js')}}"></script>
 </html>
+

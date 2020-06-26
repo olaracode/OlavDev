@@ -7,14 +7,15 @@
         <noscript><link rel="stylesheet" href="{{asset('/css/visual/noscript.css')}}" /></noscript>
     </head>
     <body class="is-preload">
-
         <div id="demo">
+            @if(session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
             <main-page></main-page>
         </div>
     </body>
-
-
-
     <script src="{{asset('js/visual/jquery.min.js')}}"></script>
     <script src="{{asset('js/visual/jquery.scrolly.min.js')}}"></script>
     <script src="{{asset('js/visual/jquery.poptrox.min.js')}}"></script>

@@ -6,6 +6,7 @@ import Diseno from './components/Diseno.vue'
 import Desarrollo from './components/Desarrollo.vue'
 import Main from './components/Main.vue'
 import Despliegue from './components/Despliegue.vue'
+import Portfolio from './components/Portfolio.vue'
 // import Admin from './components/Admin.vue'
 //
 
@@ -19,13 +20,15 @@ Vue.component('main-page', Main);
 Vue.component('Desarrollo', Desarrollo );
 Vue.component('Diseno', Diseno);
 Vue.component('Despliegue', Despliegue);
+Vue.component('Portfolio', Portfolio)
 // Vue.component('Admin', Admin)
 
 //Rutas de diseño y desarrollo
 const routes = [
     {path: '/', component: Diseno},
     {path: '/Desarrollo', component: Desarrollo},
-    {path: '/Despliegue', component: Despliegue}
+    {path: '/Despliegue', component: Despliegue},
+    {path: '/Portfolio', component: Portfolio}
 ];
 
 const router = new VueRouter({

@@ -34,6 +34,11 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+nav{
+	position: sticky;
+	background: #300c01 url("images/banner.svg") bottom center no-repeat;
+
+}
 
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
@@ -159,10 +164,20 @@ input, select, textarea {
 		color: white;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+	}
+	.a {
+		-moz-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+		-webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+		color: white;
+		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
+		text-decoration: none;
+		background-color: #f1f1f1;
 	}
 
 		a:hover {
+			color: #b80400;
 			border-bottom-color: rgba(53, 184, 143, 0);
 		}
 
@@ -189,7 +204,10 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-
+#nav{
+	margin-top: 0px;
+	;
+}
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
 	}
@@ -1950,7 +1968,14 @@ input, select, textarea {
 			}
 
 /* Icons */
-
+.alert{
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	background-color: white;
+	text-align: center;
+	color: #b80400;
+}
 	.icon {
 		text-decoration: none;
 		text-decoration: none;
@@ -2117,7 +2142,7 @@ input, select, textarea {
 	color: #fff;
 	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 	text-align: center;
-	background-image: url("../../images/server.jpg");
+	background-image: url("../../images/server1.jpg");
 	padding: 5em 0 5em 0;
 	margin: 0;
 	background-size: 125% auto;
@@ -2141,6 +2166,12 @@ input, select, textarea {
 	padding: 5em 0 5em 0;
 	margin: 0;
 	background-size: 125% auto;
+}
+header p a{
+	color: white;
+}
+p a{
+	color: black;
 }
 
 
@@ -2482,6 +2513,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 		#header{
 			background-image: url("../../images/011.jpg");
+			background-repeat: no-repeat;
 		}
 
 		/* Basic */

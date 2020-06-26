@@ -9,7 +9,7 @@ class ConsultaController extends Controller
 {
     public function create()
     {
-        return view('visual');
+        return view('consultas/visual');
     }
     public function store()
     {
@@ -20,6 +20,24 @@ class ConsultaController extends Controller
         ]);
 //        dd(\request()->all());
         Consulta::create($data);
-        return redirect(route('visual'));
+        return redirect('diseno')->with('message', 'Su consulta ha sido registrada');
+    }
+    public function edit($id)
+    {
+        $consulta = Consulta::find($id);
+        return view('consultas.modify', compact('consulta', 'id'));
+    }
+    public function update($id)
+    {
+        $consulta = Consulta::find($id);
+        $consulta->visto=true;
+        $consulta->save();
+        return redirect('admin');
+    }
+    public function delete($id)
+    {
+        $consulta = Consulta::find($id);
+        $consulta->delete();
+        return redirect('admin');
     }
 }
