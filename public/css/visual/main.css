@@ -84,12 +84,12 @@ input, select, textarea {
 	background-image: url("../../images/01.jpg");
 }
 	body {
-		background-color: #300c01;
-		/*background-image: url("images/overlay.png"), url("../../images/visual/bg.jpg");*/
+		background-image:linear-gradient(to top, black, #300c01, #9d080d, #e3646f, #e7a9b0, #e3646f, #9d080d, #300c01, black) ;
+		/*background-image: url("images/overlay.png"), url("../../images/visual/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
-		background-attachment: fixed, fixed;
+		background-attachment: fixed, fixed;*/
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 18pt;
 		line-height: 1.75em;

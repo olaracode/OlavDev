@@ -2166,10 +2166,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Main"
 });
@@ -39678,41 +39674,8 @@ var staticRenderFns = [
           _c(
             "a",
             {
-              staticClass: "icon brands fa-twitter",
-              attrs: { href: "#footer" }
-            },
-            [_c("span", { staticClass: "label" }, [_vm._v("Twitter")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass: "icon brands fa-facebook-f",
-              attrs: { href: "#footer" }
-            },
-            [_c("span", { staticClass: "label" }, [_vm._v("Facebook")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            {
-              staticClass: "icon brands fa-google-plus-g",
-              attrs: { href: "#footer" }
-            },
-            [_c("span", { staticClass: "label" }, [_vm._v("Google+")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            {
               staticClass: "icon brands fa-pinterest",
-              attrs: { href: "#footer" }
+              attrs: { href: "https://www.pinterest.com/olaraav/boards/" }
             },
             [_c("span", { staticClass: "label" }, [_vm._v("Pinterest")])]
           )
@@ -39726,14 +39689,6 @@ var staticRenderFns = [
               attrs: { href: "https://www.instagram.com/olvdev/?hl=es" }
             },
             [_c("span", { staticClass: "label" }, [_vm._v("Dribbble")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            { staticClass: "icon brands fa-linkedin-in", attrs: { href: "#" } },
-            [_c("span", { staticClass: "label" }, [_vm._v("LinkedIn")])]
           )
         ])
       ]),
@@ -39833,7 +39788,7 @@ var render = function() {
                   staticClass: "image fit",
                   attrs: { href: "/portfolio/univ" }
                 },
-                [_c("img", { attrs: { src: "/images/Good.png", alt: "" } })]
+                [_c("img", { attrs: { src: "/images/good.png", alt: "" } })]
               )
             ]
           ),
@@ -55628,8 +55583,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\olavdev\oladev\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\olavdev\oladev\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/octavio/Desktop/Development/Php/Laravel/OlavDev/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/octavio/Desktop/Development/Php/Laravel/OlavDev/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

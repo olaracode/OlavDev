@@ -7,25 +7,21 @@
     <noscript><link rel="stylesheet" href="{{asset('/css/visual/noscript.css')}}" /></noscript>
 </head>
 <body class="is-preload">
-<div id="demo">
-    @yield('content')
-</div>
-<section id="footer">
-    <ul class="icons">
-        <li><a href="#footer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#footer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-        <li><a href="#footer" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-        <li><a href="#footer" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-        <li><a href="https://www.instagram.com/olvdev/?hl=es" class="icon brands fa-instagram"><span class="label">Dribbble</span></a></li>
-        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-    </ul>
-    <div class="copyright">
-        <ul class="menu">
-            <li>&copy;Visual.</li>
-            <li>Diseño: Octavio Lara</li>
-        </ul>
+    <div id="demo">
+        @yield('content')
     </div>
-</section>
+    <section id="footer">
+        <ul class="icons">
+            <li><a href="https://www.pinterest.com/olaraav/boards/" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+            <li><a href="https://www.instagram.com/olvdev/?hl=es" class="icon brands fa-instagram"><span class="label">Dribbble</span></a></li>
+        </ul>
+        <div class="copyright">
+            <ul class="menu">
+                <li>&copy;Visual.</li>
+                <li>Diseño: Octavio Lara</li>
+            </ul>
+        </div>
+    </section>
 
 </body>
 

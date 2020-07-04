@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-3 col-12-mobile" data-aos-delay="300" data-aos-duration="700" data-aos="flip-right">
                     <a href="/portfolio/univ" class="image fit">
-                        <img :src="'/images/Good.png'" alt=""/>
+                        <img :src="'/images/good.png'" alt=""/>
                     </a>
                 </div>
                 <div class="col-3 col-12-mobile" data-aos-delay="400" data-aos-duration="700" data-aos="flip-right">
